@@ -40,10 +40,10 @@ end
 
 Then /^the response status should be "([^"]*)"$/ do |status|
   begin
-    last_response.status.should eq(status.to_i)
+    status_code.should eq(status.to_i)
   rescue RSpec::Expectations::ExpectationNotMetError => e
     puts "Response body:"
-    puts last_response.body
+    puts source
     raise e 
   end
 end
