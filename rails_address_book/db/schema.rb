@@ -17,16 +17,16 @@ ActiveRecord::Schema.define(:version => 20111005184158) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "display_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "emails", :force => true do |t|
     t.integer  "card_id"
     t.string   "address_type"
     t.string   "address"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
 end
