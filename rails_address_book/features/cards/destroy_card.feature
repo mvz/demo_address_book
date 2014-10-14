@@ -8,4 +8,4 @@ Feature: destroy a card
     And I have created a card
     And I store the card id to use it in a future API call
     When I send a DELETE request to "/cards/{{id}}"
-    Then the response status should be "200"
+    Then the response status should be "204"
